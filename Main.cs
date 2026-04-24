@@ -22,7 +22,7 @@ namespace RandomNum
                 if (input == num)
                 {
                     Console.WriteLine($"Ты угадал число {num} за {attempts} попыток");
-                    File.WriteAllText(path, $"Ты угадал число {num} за {attempts} попыток");
+                    File.AppendAllText(path, $"\nТы угадал число {num} за {attempts} попыток");
                     break;
                 }
                 else if (input < num)
